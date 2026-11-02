@@ -591,6 +591,7 @@ homeassistant.components.sofar.*
 homeassistant.components.solaredge_modbus.*
 homeassistant.components.solarlog.*
 homeassistant.components.solyx_energy_cloud.*
+homeassistant.components.solyx_energy_local.*
 homeassistant.components.sonarr.*
 homeassistant.components.spaceapi.*
 homeassistant.components.specialized_turbo.*

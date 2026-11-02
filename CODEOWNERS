@@ -1850,6 +1850,8 @@ CLAUDE.md @home-assistant/core
 /tests/components/solax/ @squishykid @Darsstar
 /homeassistant/components/solyx_energy_cloud/ @MartinaeyNL
 /tests/components/solyx_energy_cloud/ @MartinaeyNL
+/homeassistant/components/solyx_energy_local/ @MartinaeyNL @pankalog
+/tests/components/solyx_energy_local/ @MartinaeyNL @pankalog
 /homeassistant/components/soma/ @ratsept
 /tests/components/soma/ @ratsept
 /homeassistant/components/somfy_mylink/ @sslivins

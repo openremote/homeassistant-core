@@ -1,0 +1,74 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]",
+      "not_solyx_device": "The discovered device is not a Solyx Energy Nymo.",
+      "wrong_device": "The device at this address is a different Nymo."
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "certificate_mismatch": "The device presented a different certificate. Check the certificate fingerprint in the Solyx Energy app.",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "invalid_fingerprint": "The certificate fingerprint must be 64 hexadecimal characters.",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "flow_title": "Nymo {device_id}",
+    "step": {
+      "user": {
+        "data": {
+          "cert_sha256": "Certificate fingerprint",
+          "host": "[%key:common::config_flow::data::host%]",
+          "token": "[%key:common::config_flow::data::access_token%]"
+        },
+        "data_description": {
+          "cert_sha256": "The certificate fingerprint (SHA-256) shown in the Solyx Energy app.",
+          "host": "The hostname or IP address of the Nymo, for example `solyx-a1b2c3.local`.",
+          "token": "The access token shown in the Solyx Energy app."
+        },
+        "description": "Set up your Nymo to integrate with Home Assistant over the home network."
+      },
+      "zeroconf_confirm": {
+        "data": {
+          "cert_sha256": "Certificate fingerprint",
+          "token": "[%key:common::config_flow::data::access_token%]"
+        },
+        "data_description": {
+          "cert_sha256": "The certificate fingerprint (SHA-256) shown in the Solyx Energy app.",
+          "token": "The access token shown in the Solyx Energy app."
+        },
+        "description": "Nymo {device_id} was found at {host}. Enter the access token and certificate fingerprint shown in the Solyx Energy app."
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "boiler_current": {
+        "name": "Boiler current"
+      },
+      "boiler_power": {
+        "name": "Boiler power"
+      },
+      "boiler_voltage": {
+        "name": "Boiler voltage"
+      },
+      "days_since_maximum_temperature": {
+        "name": "Days since maximum temperature"
+      },
+      "grid_power": {
+        "name": "Grid power"
+      },
+      "legionella_days": {
+        "name": "Days since last legionella prevention"
+      },
+      "saved_this_month": {
+        "name": "Saved this month"
+      },
+      "saved_this_week": {
+        "name": "Saved this week"
+      },
+      "saved_today": {
+        "name": "Saved today"
+      }
+    }
+  }
+}

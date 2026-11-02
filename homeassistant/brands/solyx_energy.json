@@ -1,0 +1,5 @@
+{
+  "domain": "solyx_energy",
+  "name": "Solyx Energy",
+  "integrations": ["solyx_energy_cloud", "solyx_energy_local"]
+}
