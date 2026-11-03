@@ -1039,6 +1039,11 @@ ZEROCONF = {
             "domain": "solarman",
         },
     ],
+    "_solyx._tcp.local.": [
+        {
+            "domain": "solyx_energy_local",
+        },
+    ],
     "_sonos._tcp.local.": [
         {
             "domain": "sonos",
