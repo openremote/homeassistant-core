@@ -144,6 +144,12 @@ class SolyxSensorEntity(SolyxNymoEntity, SensorEntity):
 
     @property
     @override
+    def available(self) -> bool:
+        """Unavailable while the Sensorbox has no recent value from the Nymo."""
+        return super().available and self.native_value is not None
+
+    @property
+    @override
     def native_value(self) -> float | None:
         """Retrieve the parsed (native) value of the sensor."""
         return self.entity_description.value_fn(self.coordinator.data)
