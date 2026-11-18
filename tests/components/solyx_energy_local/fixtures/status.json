@@ -1,0 +1,43 @@
+{
+  "controlSource": "CLOUD",
+  "command": { "operationMode": null, "powerPercent": null },
+  "nymo": {
+    "connected": true,
+    "mode": "PWR_FROM_GRID",
+    "controlValue": 50,
+    "boiler": { "power": 1380, "voltage": 228, "current": 6.0 },
+    "grid": {
+      "power": -320,
+      "lineVoltages": [231, 229, 230],
+      "lineCurrents": [2, 1, 1]
+    },
+    "temperatures": { "heatSink": 22, "mainPcb": 23, "frontPcb": 24 },
+    "radioSignal": -44.0,
+    "age": 11
+  },
+  "savings": {
+    "today": 1200,
+    "yesterday": 3400,
+    "thisWeek": 9800,
+    "lastWeek": 21000,
+    "thisMonth": 41999,
+    "lastMonth": 88000,
+    "thisYear": 512000,
+    "lastYear": 1100000,
+    "total": 2300000,
+    "age": 11
+  },
+  "settings": {
+    "threshold1": 100,
+    "threshold2": 0,
+    "powerLimit": 255,
+    "boostMinutes": 30,
+    "legionella": {
+      "enabled": true,
+      "intervalDays": 7,
+      "daysSinceMaxTemperature": 3
+    },
+    "age": 11
+  },
+  "sensorbox": { "wifiSignal": -39 }
+}
