@@ -1,0 +1,15 @@
+{
+  "domain": "solyx_energy_local",
+  "name": "Solyx Energy Local",
+  "categories": ["energy.meters_monitoring", "energy.solar_batteries"],
+  "codeowners": ["@MartinaeyNL", "@pankalog"],
+  "config_flow": true,
+  "connectivity": ["network"],
+  "documentation": "https://www.home-assistant.io/integrations/solyx_energy_local",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "loggers": ["solyx_energy_local_api"],
+  "quality_scale": "bronze",
+  "requirements": ["solyx-energy-local-api-client==0.1.0"],
+  "zeroconf": ["_solyx._tcp.local."]
+}
